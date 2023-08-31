@@ -58,7 +58,4 @@ full_r.rfamseq_acc = r.rfamseq_acc
 GROUP by f.rfam_acc, w.title
 having DNA_Length > 1000000
 ORDER by DNA_Length desc
-LIMIT 15 OFFSET 120; -- 9th page with 15 results per page (8 pages * 15 results = 120 results skipped);
-
-
-
+LIMIT 15 OFFSET 120; -- 120 means records will come after 120 no. because evey page has 15 records and we want to see 9th page records, so till 8th we will have 8 * 15 = 120 records
